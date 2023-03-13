@@ -8,4 +8,5 @@ export const COLORS = {
   black: '#000000',
   white: '#FFFFFF',
   textInput: '#1F1422',
+  orange: '#FE7702'
 };

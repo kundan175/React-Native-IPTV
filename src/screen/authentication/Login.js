@@ -22,7 +22,7 @@ const Login = () => {
         />
         <View style={{marginTop: wp(3)}}>
           <Shadow startColor={'#FE753A'} distance={8} 
-          style={{borderRadius:wp(6)}}
+          style={{borderRadius:wp(5)}}
           >
             <View style={{padding: 20}}>
               <Text
@@ -57,7 +57,7 @@ const Login = () => {
                 onChangeText={value => console.log(value)}
               />
               </View>
-              <TouchableOpacity onPress={() => navigation.navigate('Home')} style={{height:hp(10),width:wp(40),backgroundColor:'#FE7702',marginTop:wp(4),marginHorizontal:wp(5),borderRadius:wp(20),justifyContent:'center',alignItems:'center'}}>
+              <TouchableOpacity onPress={() => navigation.navigate('Home')} style={{height:hp(10),width:wp(25),backgroundColor:'#FE7702',marginTop:wp(4),marginHorizontal:wp(5),borderRadius:wp(2),justifyContent:'center',alignItems:'center',alignSelf:'center'}}>
                 <Text style={{color:'white',fontSize:15}}>Login</Text>
               </TouchableOpacity>
             </View>

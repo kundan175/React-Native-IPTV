@@ -5,6 +5,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { navigationRef } from "./src/components/NavigationService";
 import Login from "./src/screen/authentication/Login";
 import Home from "./src/screen/IsLogin/Home";
+import ListCategory from "./src/screen/IsLogin/ListCategory"
+
 const App = () => {
   const Stack = createNativeStackNavigator();
 
@@ -18,6 +20,8 @@ const App = () => {
           >
             <Stack.Screen name="Login" component={Login} />
             <Stack.Screen name="Home" component={Home} />
+            <Stack.Screen name="ListCategory" component={ListCategory} />
+
           </Stack.Navigator>
         </NavigationContainer>
       </SafeAreaView>

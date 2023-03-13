@@ -45,7 +45,7 @@ export default class NativeTextInput extends Component {
             paddingHorizontal: 15,
             marginTop: 5,
             color: COLORS.textInput,
-            borderColor: COLORS.white,
+            borderColor: '#4690EB',
           }}
           editable={this.props.editable}
           onChangeText={this.props.onChangeText}
