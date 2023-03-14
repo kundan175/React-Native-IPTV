@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import {View, Text, Image, TouchableOpacity, SafeAreaView} from 'react-native';
 import {COLORS} from '../../config/Constants';
 import {
@@ -9,9 +9,22 @@ import ImagePath from '../../assets/ImagePath';
 import {Shadow} from 'react-native-shadow-2';
 import NativeTextInput from '../../components/NativeTextInput';
 import { useNavigation } from '@react-navigation/native';
+import Api from '../../config/Api';
 
 const Login = () => {
   const navigation = useNavigation()
+  const [url, setUrl] = useState('')
+  const [userName, setUserName] = useState('')
+  const [password, setPassword] = useState('')
+
+const LoginApi = async() => {
+  Api.call(`${url}/player_api.php?username=${userName}&password=${password}&type=m3u_plus&output=ts`).then(res => {
+    if(res){
+      console.log('response =>>',res)
+    }
+  })
+}
+  
   return (
     <SafeAreaView style={{flex:1}}>
     <View style={{backgroundColor: COLORS.black, flex: 1}}>
@@ -38,7 +51,8 @@ const Login = () => {
                 placeHolder={'Enter Username'}
                 onSubmitEditing={() => {}}
                 returnKeyType="next"
-                onChangeText={value => console.log(value)}
+                value={userName}
+                onChangeText={value => setUserName(value)}
               />
               </View>
               <View style={{marginTop:wp(1)}}>
@@ -46,7 +60,9 @@ const Login = () => {
                 placeHolder={'Enter Password'}
                 onSubmitEditing={() => {}}
                 returnKeyType="next"
-                onChangeText={value => console.log(value)}
+                value={password}
+
+                onChangeText={value => setPassword(value)}
               />
               </View>
               <View style={{marginTop:wp(1)}}>
@@ -54,10 +70,12 @@ const Login = () => {
                 placeHolder={'Enter URL'}
                 onSubmitEditing={() => {}}
                 returnKeyType="next"
-                onChangeText={value => console.log(value)}
+                value={url}
+
+                onChangeText={value => setUrl(value)}
               />
               </View>
-              <TouchableOpacity onPress={() => navigation.navigate('Home')} style={{height:hp(10),width:wp(25),backgroundColor:'#FE7702',marginTop:wp(4),marginHorizontal:wp(5),borderRadius:wp(2),justifyContent:'center',alignItems:'center',alignSelf:'center'}}>
+              <TouchableOpacity onPress={() => LoginApi()} style={{height:hp(10),width:wp(25),backgroundColor:'#FE7702',marginTop:wp(4),marginHorizontal:wp(5),borderRadius:wp(2),justifyContent:'center',alignItems:'center',alignSelf:'center'}}>
                 <Text style={{color:'white',fontSize:15}}>Login</Text>
               </TouchableOpacity>
             </View>

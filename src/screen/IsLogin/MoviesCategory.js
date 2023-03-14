@@ -15,7 +15,7 @@ import { useNavigation } from "@react-navigation/native";
 import ImagePath from "../../assets/ImagePath";
 import { COLORS } from "../../config/Constants";
 
-const ListCategory = ({route}) => {
+const MoviesCategory = ({route}) => {
     const headerName = route?.params?.headerName
   const navigation = useNavigation();
 
@@ -44,24 +44,12 @@ const DATA = [
         id:5,
         title:'hello'
     },
-    {
-        id:6,
-        title:'hello'
-    },
-    {
-        id:7,
-        title:'hello'
-    },
-    {
-        id:8,
-        title:'hello'
-    },
 
 ]
 const renderItem = ({item}) =>{
     return(
-        <View style={{padding:12,marginTop:wp(2),}}>
-            <TouchableOpacity onPress={() => navigation.navigate('MoviesCategory')} style={{backgroundColor:COLORS.orange,width:wp(25),height:wp(7),borderRadius:wp(3),padding:wp(1),justifyContent:'center'}}>
+        <View style={{padding:10,marginTop:wp(2),}}>
+            <TouchableOpacity style={{backgroundColor:COLORS.orange,width:wp(20),height:wp(15),borderRadius:wp(3),justifyContent:'center'}}>
                 <Text style={{color:COLORS.white,fontSize:wp(3),textAlign:'center'}}>{item?.title}</Text>
             </TouchableOpacity>
         </View>
@@ -88,13 +76,13 @@ const renderItem = ({item}) =>{
           />
           </View>
         </View>
-        <Text style={{color:'white',fontSize:wp(3),marginRight:wp(8)}}>{headerName}</Text>
+        <Text style={{color:'white',fontSize:wp(3),marginRight:wp(8)}}>M</Text>
         <View style={{flexDirection:'row',}}>
         <Image source={ImagePath.Search} style={{height:wp(3),width:wp(3),marginRight:wp(4)}}/>
         <Image source={ImagePath.AppDrawer} style={{height:wp(3),width:wp(3),marginRight:wp(2)}}/>
         </View>
         </View>
-        <View style={{marginTop:wp(2),marginHorizontal:wp(2)}}>
+        <View style={{marginHorizontal:wp(2)}}>
      <FlatList
      data={DATA}
      renderItem={renderItem}
@@ -106,4 +94,4 @@ const renderItem = ({item}) =>{
   );
 };
 
-export default ListCategory;
+export default MoviesCategory;

@@ -15,7 +15,7 @@ import { useNavigation } from "@react-navigation/native";
 import ImagePath from "../../assets/ImagePath";
 import { COLORS } from "../../config/Constants";
 
-const Login = () => {
+const Home = () => {
   const navigation = useNavigation();
   return (
     <SafeAreaView
@@ -160,4 +160,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Home;
