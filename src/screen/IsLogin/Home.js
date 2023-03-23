@@ -21,27 +21,30 @@ const Home = () => {
     <SafeAreaView
       style={{
         flex: 1,
-        backgroundColor: COLORS.black,
-        marginTop: StatusBar.currentHeight,
       }}
     >
       <View style={{ backgroundColor: COLORS.black, flex: 1 }}>
         <View style={{ padding: wp(2), paddingHorizontal: wp(4) }}>
-          <Image
-            style={{  }}
-            source={ImagePath.HomeScreenLogo}
-          />
+          <Image style={{}} source={ImagePath.HomeScreenLogo} />
         </View>
         <View
           style={{
             flexDirection: "row",
             padding: wp(2),
-            paddingHorizontal: wp(4),justifyContent:'space-between'
+            paddingHorizontal: wp(4),
+            justifyContent: "space-between",
           }}
         >
-          <View style={{ flexDirection: "row",marginTop:wp(2) }}>
-            <TouchableOpacity onPress={() => navigation.navigate('ListCategory',{headerName:'LIVE TV'})}>
-              <Image source={ImagePath.LiveIcon}style={{height:wp(16),width:wp(16)}} />
+          <View style={{ flexDirection: "row", marginTop: wp(2) }}>
+            <TouchableOpacity
+              onPress={() =>
+                navigation.navigate("ListCategory", { headerName: "LIVE TV" })
+              }
+            >
+              <Image
+                source={ImagePath.LiveIcon}
+                style={{ height: wp(16), width: wp(16) }}
+              />
               <Image
                 source={ImagePath.LiveTvIcon}
                 style={{ position: "absolute", left: wp(2), top: wp(1) }}
@@ -59,8 +62,16 @@ const Home = () => {
                 Live Tv
               </Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => navigation.navigate('ListCategory',{headerName:'MOVIES'})} style={{ marginLeft: wp(2) }}>
-              <Image source={ImagePath.LiveIcon}style={{height:wp(16),width:wp(16)}}  />
+            <TouchableOpacity
+              onPress={() =>
+                navigation.navigate("ListCategory", { headerName: "MOVIES" })
+              }
+              style={{ marginLeft: wp(2) }}
+            >
+              <Image
+                source={ImagePath.LiveIcon}
+                style={{ height: wp(16), width: wp(16) }}
+              />
               <Image
                 source={ImagePath.MoviesPopcorn}
                 style={{ position: "absolute", left: wp(2), top: wp(1) }}
@@ -78,8 +89,16 @@ const Home = () => {
                 Movies
               </Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => navigation.navigate('ListCategory',{headerName:'SERIES'})} style={{ marginLeft: wp(2) }}>
-              <Image source={ImagePath.LiveIcon}style={{height:wp(16),width:wp(16)}}  />
+            <TouchableOpacity
+              onPress={() =>
+                navigation.navigate("ListCategory", { headerName: "SERIES" })
+              }
+              style={{ marginLeft: wp(2) }}
+            >
+              <Image
+                source={ImagePath.LiveIcon}
+                style={{ height: wp(16), width: wp(16) }}
+              />
               <Image
                 source={ImagePath.SeriesIcon}
                 style={{ position: "absolute", left: wp(2), top: wp(1) }}
@@ -98,7 +117,7 @@ const Home = () => {
               </Text>
             </TouchableOpacity>
           </View>
-          <View style={{ marginTop:wp(2), }}>
+          <View style={{ marginTop: wp(2) }}>
             <TouchableOpacity
               style={{
                 borderColor: "#4690EB",
@@ -153,7 +172,7 @@ const Home = () => {
               </Text>
             </TouchableOpacity>
           </View>
-    {/* <View style={{height:wp(2),width:wp(2),backgroundColor:'red'}}/> */}
+          {/* <View style={{height:wp(2),width:wp(2),backgroundColor:'red'}}/> */}
         </View>
       </View>
     </SafeAreaView>
