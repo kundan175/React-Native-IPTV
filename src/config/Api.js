@@ -18,7 +18,7 @@ export default Api = {
     if (bodyData instanceof FormData) {
       if (hastoken) {
         header = {
-          Authorization: "Bearer" + " " + global.token,
+          Authorization: global.token,
         };
       } else {
         header = {
@@ -29,7 +29,7 @@ export default Api = {
       if (hastoken) {
         header = {
           "Content-Type": "application/json",
-          Authorization: "Bearer" + " " + global.token,
+          Authorization: global.token,
         };
       } else {
         header = {
@@ -41,7 +41,7 @@ export default Api = {
 
     console.log("url===>", fullUrl);
     console.log("body===>", bodyData);
-    console.log("token===>", "Bearer" + " " + global.token);
+    console.log("token===>", global.token);
 
     return await fetch(fullUrl, {
       method: method,
