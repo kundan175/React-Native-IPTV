@@ -7,5 +7,6 @@ export default {
   HomeScreenLogo: require('../assets/Image/HomeScreenLogo.png'),
   Search: require('../assets/Image/Search.png'),
   BackArrow: require('../assets/Image/BackArrow.png'),
-  AppDrawer: require('../assets/Image/AppDrawer.png')
+  AppDrawer: require('../assets/Image/AppDrawer.png'),
+  MovieImage: require('../assets/Image/MovieImage.png')
 };

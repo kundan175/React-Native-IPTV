@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   View,
   Text,
@@ -14,10 +14,15 @@ import {
 import { useNavigation } from "@react-navigation/native";
 import ImagePath from "../../assets/ImagePath";
 import { COLORS } from "../../config/Constants";
+import Api from "../../config/Api";
 
 const ListCategory = ({route}) => {
     const headerName = route?.params?.headerName
   const navigation = useNavigation();
+// const dispatch = useDispatch()
+useEffect(() => {
+  LiveCategoryList()
+},[])
 
 const DATA = [
     {
@@ -58,6 +63,12 @@ const DATA = [
     },
 
 ]
+
+const LiveCategoryList = async() => {
+  Api.call(`http://ky-iptv.com:25461/player_api.php?username=mustest555&password=22334455&action=get_live_categories`,'GET',null,true).then(res => {
+    console.log('->',res)
+  })
+}
 const renderItem = ({item}) =>{
     return(
         <View style={{padding:12,marginTop:wp(2),}}>

@@ -45,32 +45,39 @@ const MoviesCategory = ({ route }) => {
       id: 5,
       title: "hello",
     },
-  ];
-  const renderItem = ({ item }) => {
-    return (
-      <View style={{ padding: 10, marginTop: wp(2) }}>
-        <TouchableOpacity
-          style={{
-            backgroundColor: COLORS.orange,
-            width: wp(20),
-            height: wp(15),
-            borderRadius: wp(3),
-            justifyContent: "center",
-          }}
-        >
-          <Text
-            style={{
-              color: COLORS.white,
-              fontSize: wp(3),
-              textAlign: "center",
-            }}
-          >
-            {item?.title}
-          </Text>
-        </TouchableOpacity>
-      </View>
-    );
-  };
+    {
+      id:6,
+      title:'hello'
+  },
+  {
+    id:7,
+    title:'hello'
+},
+{
+  id:8,
+  title:'hello'
+},
+{
+  id:9,
+  title:'hello'
+},
+
+
+]
+const renderItem = ({item}) =>{
+    return(
+        <View style={{padding:10,marginTop:wp(2),marginLeft:wp(2)}}>
+             <TouchableOpacity >
+             <View style={{backgroundColor:COLORS.orange,width:wp(12),height:wp(15),borderRadius:wp(3),justifyContent:'center',borderColor:COLORS.white,borderWidth:1}}>
+                <Text style={{color:COLORS.black,fontSize:14,textAlign:'center',top:wp(6.5)}}>{item?.title}</Text>
+            </View>
+<Image source={ImagePath.MovieImage} style={{width:wp(13),height:wp(15),borderRadius:wp(3),position:'absolute',right:wp(1),bottom:wp(2)}}/>
+       
+           
+            </TouchableOpacity>
+        </View>
+    )
+}
 
   return (
     <SafeAreaView
