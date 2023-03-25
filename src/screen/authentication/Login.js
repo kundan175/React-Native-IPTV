@@ -5,6 +5,7 @@ import {
   Image,
   TouchableOpacity,
   SafeAreaView,
+  Alert,
 } from "react-native";
 import { COLORS } from "../../config/Constants";
 import {
@@ -24,6 +25,16 @@ const Login = () => {
   const [password, setPassword] = useState("");
 
   const LoginApi = async () => {
+    if(userName == ''){
+      Alert.alert("user name field can't be empty")
+    }else if (password == ''){
+      Alert.alert("password field can't be empty")
+    }else if(url == ''){
+      Alert.alert("url field can't be empty")
+
+    }else{
+
+   
     Api.call(
       `${url}/player_api.php?username=${userName}&password=${password}&type=m3u_plus&output=ts`
     ).then((res) => {
@@ -32,6 +43,7 @@ const Login = () => {
         navigation.navigate("Home");
       }
     });
+  }
   };
 
   return (

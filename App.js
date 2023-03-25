@@ -7,6 +7,7 @@ import Login from "./src/screen/authentication/Login";
 import Home from "./src/screen/IsLogin/Home";
 import ListCategory from "./src/screen/IsLogin/ListCategory"
 import MoviesCategory from "./src/screen/IsLogin/MoviesCategory";
+import CategoryInfo from "./src/screen/IsLogin/CategoryInfo";
 
 const App = () => {
   const Stack = createNativeStackNavigator();
@@ -23,6 +24,8 @@ const App = () => {
             <Stack.Screen name="Home" component={Home} />
             <Stack.Screen name="ListCategory" component={ListCategory} />
             <Stack.Screen name="MoviesCategory" component={MoviesCategory} />
+            <Stack.Screen name="CategoryInfo" component={CategoryInfo} />
+
 
 
           </Stack.Navigator>
