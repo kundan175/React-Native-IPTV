@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.iptvsmartflixplayer.app-mergeDebugResources-27:/values-ro/values-ro.xml",
+            "outputFile": "com.iptvsmartflixplayer.app-mergeDebugResources-28:/values-ro/values-ro.xml",
             "map": [
                 {
                     "source": "/Users/kundan/.gradle/caches/transforms-3/a74319f16e76beadbf53eb2669b709f5/transformed/core-1.7.0/res/values-ro/values-ro.xml",

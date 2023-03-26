@@ -17,6 +17,7 @@ import { Shadow } from "react-native-shadow-2";
 import NativeTextInput from "../../components/NativeTextInput";
 import { useNavigation } from "@react-navigation/native";
 import Api from "../../config/Api";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const Login = () => {
   const navigation = useNavigation();
@@ -36,6 +37,9 @@ const Login = () => {
         `${url}/player_api.php?username=${userName}&password=${password}&type=m3u_plus&output=ts`
       ).then((res) => {
         if (res) {
+          AsyncStorage.setItem("password", password);
+          AsyncStorage.setItem("url", url);
+          AsyncStorage.setItem("userName", userName);
           console.log("response =>>", res);
           navigation.navigate("Home");
         }

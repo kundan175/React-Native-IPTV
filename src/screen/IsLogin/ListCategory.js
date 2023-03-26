@@ -16,6 +16,7 @@ import { useNavigation } from "@react-navigation/native";
 import ImagePath from "../../assets/ImagePath";
 import { COLORS } from "../../config/Constants";
 import Api from "../../config/Api";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const ListCategory = ({ route }) => {
   const headerName = route?.params?.headerName;
@@ -28,7 +29,9 @@ const ListCategory = ({ route }) => {
 
   const LiveCategoryList = async () => {
     Api.call(
-      `http://ky-iptv.com:25461/player_api.php?username=mustest555&password=22334455&action=${
+      `http://ky-iptv.com:25461/player_api.php?username=${await AsyncStorage.getItem(
+        "userName"
+      )}&password=${await AsyncStorage.getItem("password")}&action=${
         headerName == "LIVE TV"
           ? "get_live_categories"
           : headerName == "MOVIES"

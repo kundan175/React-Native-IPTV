@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.iptvsmartflixplayer.app-mergeDebugResources-27:/values/values.xml",
+            "outputFile": "com.iptvsmartflixplayer.app-mergeDebugResources-28:/values/values.xml",
             "map": [
                 {
                     "source": "/Users/kundan/.gradle/caches/transforms-3/3444de6ee31c32042bfac5bde7fd8821/transformed/transition-1.2.0/res/values/values.xml",
@@ -251,6 +251,25 @@
                         "startOffsets": "40365",
                         "endColumns": "49",
                         "endOffsets": "40410"
+                    }
+                },
+                {
+                    "source": "/Users/kundan/.gradle/caches/transforms-3/f0d501b95c1cd369ba7f21e0193fb942/transformed/jetified-Android-ScalableVideoView-10e7b4da8b/res/values/values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "35",
+                        "endColumns": "24",
+                        "endOffsets": "1444"
+                    },
+                    "to": {
+                        "startLines": "7116",
+                        "startColumns": "4",
+                        "startOffsets": "385868",
+                        "endLines": "7149",
+                        "endColumns": "24",
+                        "endOffsets": "387257"
                     }
                 },
                 {

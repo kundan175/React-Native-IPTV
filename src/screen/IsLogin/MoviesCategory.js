@@ -15,6 +15,7 @@ import {
 import { useNavigation } from "@react-navigation/native";
 import ImagePath from "../../assets/ImagePath";
 import { COLORS } from "../../config/Constants";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const MoviesCategory = ({ route }) => {
   const type = route?.params?.type;
@@ -71,7 +72,9 @@ const MoviesCategory = ({ route }) => {
   }, []);
   const LiveCategoryList = async () => {
     Api.call(
-      `http://ky-iptv.com/player_api.php?username=mustest555&password=22334455&action=${
+      `http://ky-iptv.com/player_api.php?username=${await AsyncStorage.getItem(
+        "userName"
+      )}&password=${await AsyncStorage.getItem("password")}&action=${
         type == "LIVE TV"
           ? "get_live_streams"
           : type == "MOVIES"
@@ -89,7 +92,11 @@ const MoviesCategory = ({ route }) => {
   const renderItem = ({ item }) => {
     return (
       <View style={{ padding: 10, marginTop: wp(2), marginLeft: wp(2) }}>
-        <TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            navigation.navigate("CategoryInfo", { item: item, type: type });
+          }}
+        >
           <View
             style={{
               backgroundColor: COLORS.orange,
