@@ -33,6 +33,7 @@ const Home = () => {
             padding: wp(2),
             paddingHorizontal: wp(4),
             justifyContent: "space-between",
+            alignItems: "center",
           }}
         >
           <View style={{ flexDirection: "row", marginTop: wp(2) }}>
@@ -43,7 +44,7 @@ const Home = () => {
             >
               <Image
                 source={ImagePath.LiveIcon}
-                style={{ height: wp(16), width: wp(16) }}
+                style={{ height: wp(20), width: wp(20) }}
               />
               <Image
                 source={ImagePath.LiveTvIcon}
@@ -54,8 +55,8 @@ const Home = () => {
                   color: "#C13C03",
                   fontSize: wp(3),
                   position: "absolute",
-                  top: wp(11),
-                  left: wp(3),
+                  top: wp(14),
+                  left: wp(5),
                   fontWeight: "600",
                 }}
               >
@@ -70,7 +71,7 @@ const Home = () => {
             >
               <Image
                 source={ImagePath.LiveIcon}
-                style={{ height: wp(16), width: wp(16) }}
+                style={{ height: wp(20), width: wp(20) }}
               />
               <Image
                 source={ImagePath.MoviesPopcorn}
@@ -81,8 +82,8 @@ const Home = () => {
                   color: "#C13C03",
                   fontSize: wp(3),
                   position: "absolute",
-                  top: wp(11),
-                  left: wp(3),
+                  top: wp(14),
+                  left: wp(5),
                   fontWeight: "600",
                 }}
               >
@@ -97,7 +98,7 @@ const Home = () => {
             >
               <Image
                 source={ImagePath.LiveIcon}
-                style={{ height: wp(16), width: wp(16) }}
+                style={{ height: wp(20), width: wp(20) }}
               />
               <Image
                 source={ImagePath.SeriesIcon}
@@ -108,8 +109,8 @@ const Home = () => {
                   color: "#C13C03",
                   fontSize: wp(3),
                   position: "absolute",
-                  top: wp(11),
-                  left: wp(4),
+                  top: wp(14),
+                  left: wp(5),
                   fontWeight: "600",
                 }}
               >
@@ -117,7 +118,7 @@ const Home = () => {
               </Text>
             </TouchableOpacity>
           </View>
-          <View style={{ marginTop: wp(2) }}>
+          <View style={{}}>
             <TouchableOpacity
               style={{
                 borderColor: "#4690EB",
@@ -127,10 +128,11 @@ const Home = () => {
                 borderRadius: wp(10),
                 justifyContent: "center",
                 alignItems: "center",
+                marginBottom: wp(2),
               }}
             >
               <Text
-                style={{ color: "#C13C03", fontSize: 17, fontWeight: "600" }}
+                style={{ color: "#C13C03", fontSize: 23, fontWeight: "400" }}
               >
                 Settings
               </Text>
@@ -144,11 +146,11 @@ const Home = () => {
                 borderRadius: wp(10),
                 justifyContent: "center",
                 alignItems: "center",
-                marginTop: wp(1),
+                marginBottom: wp(2),
               }}
             >
               <Text
-                style={{ color: "#C13C03", fontSize: 17, fontWeight: "600" }}
+                style={{ color: "#C13C03", fontSize: 23, fontWeight: "400" }}
               >
                 Profile
               </Text>
@@ -162,11 +164,10 @@ const Home = () => {
                 borderRadius: wp(10),
                 justifyContent: "center",
                 alignItems: "center",
-                marginTop: wp(1),
               }}
             >
               <Text
-                style={{ color: "#C13C03", fontSize: 17, fontWeight: "600" }}
+                style={{ color: "#C13C03", fontSize: 23, fontWeight: "400" }}
               >
                 Logout
               </Text>

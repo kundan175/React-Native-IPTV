@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   View,
   Text,
@@ -17,7 +17,10 @@ import ImagePath from "../../assets/ImagePath";
 import { COLORS } from "../../config/Constants";
 
 const MoviesCategory = ({ route }) => {
-  const headerName = route?.params?.headerName;
+  const type = route?.params?.type;
+  const data = route?.params?.data;
+  const [categoryData, setCategoryData] = useState("");
+  console.log("ff", data);
   const navigation = useNavigation();
 
   const DATA = [
@@ -46,38 +49,85 @@ const MoviesCategory = ({ route }) => {
       title: "hello",
     },
     {
-      id:6,
-      title:'hello'
-  },
-  {
-    id:7,
-    title:'hello'
-},
-{
-  id:8,
-  title:'hello'
-},
-{
-  id:9,
-  title:'hello'
-},
+      id: 6,
+      title: "hello",
+    },
+    {
+      id: 7,
+      title: "hello",
+    },
+    {
+      id: 8,
+      title: "hello",
+    },
+    {
+      id: 9,
+      title: "hello",
+    },
+  ];
 
+  useEffect(() => {
+    LiveCategoryList();
+  }, []);
+  const LiveCategoryList = async () => {
+    Api.call(
+      `http://ky-iptv.com/player_api.php?username=mustest555&password=22334455&action=${
+        type == "LIVE TV"
+          ? "get_live_streams"
+          : type == "MOVIES"
+          ? "get_vod_streams"
+          : "get_series"
+      }&category_id=${data.category_id}`,
+      "GET",
+      null,
+      true
+    ).then((res) => {
+      console.log(res);
+      setCategoryData(res);
+    });
+  };
+  const renderItem = ({ item }) => {
+    return (
+      <View style={{ padding: 10, marginTop: wp(2), marginLeft: wp(2) }}>
+        <TouchableOpacity>
+          <View
+            style={{
+              backgroundColor: COLORS.orange,
+              width: wp(14),
+              height: wp(16),
+              borderRadius: wp(3),
+              justifyContent: "center",
+              borderColor: COLORS.white,
+              borderWidth: 1,
 
-]
-const renderItem = ({item}) =>{
-    return(
-        <View style={{padding:10,marginTop:wp(2),marginLeft:wp(2)}}>
-             <TouchableOpacity >
-             <View style={{backgroundColor:COLORS.orange,width:wp(12),height:wp(15),borderRadius:wp(3),justifyContent:'center',borderColor:COLORS.white,borderWidth:1}}>
-                <Text style={{color:COLORS.black,fontSize:14,textAlign:'center',top:wp(6.5)}}>{item?.title}</Text>
-            </View>
-<Image source={ImagePath.MovieImage} style={{width:wp(13),height:wp(15),borderRadius:wp(3),position:'absolute',right:wp(1),bottom:wp(2)}}/>
-       
-           
-            </TouchableOpacity>
-        </View>
-    )
-}
+              justifyContent: "flex-end",
+            }}
+          >
+            <Text
+              style={{
+                color: COLORS.black,
+                fontSize: 14,
+                textAlign: "center",
+              }}
+            >
+              {item?.name}
+            </Text>
+          </View>
+          <Image
+            source={{ uri: item?.stream_icon }}
+            style={{
+              width: wp(13),
+              height: wp(15),
+              borderRadius: wp(3),
+              position: "absolute",
+              right: wp(2.5),
+              bottom: wp(2.5),
+            }}
+          />
+        </TouchableOpacity>
+      </View>
+    );
+  };
 
   return (
     <SafeAreaView
@@ -105,7 +155,7 @@ const renderItem = ({item}) =>{
             </View>
           </View>
           <Text style={{ color: "white", fontSize: wp(3), marginRight: wp(8) }}>
-            M
+            {data?.category_name}
           </Text>
           <View style={{ flexDirection: "row" }}>
             <Image
@@ -119,7 +169,11 @@ const renderItem = ({item}) =>{
           </View>
         </View>
         <View style={{ marginHorizontal: wp(2) }}>
-          <FlatList data={DATA} renderItem={renderItem} numColumns={3} />
+          <FlatList
+            data={categoryData}
+            renderItem={renderItem}
+            numColumns={5}
+          />
         </View>
       </View>
     </SafeAreaView>

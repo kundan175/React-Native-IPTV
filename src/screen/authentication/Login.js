@@ -25,25 +25,22 @@ const Login = () => {
   const [password, setPassword] = useState("");
 
   const LoginApi = async () => {
-    if(userName == ''){
-      Alert.alert("user name field can't be empty")
-    }else if (password == ''){
-      Alert.alert("password field can't be empty")
-    }else if(url == ''){
-      Alert.alert("url field can't be empty")
-
-    }else{
-
-   
-    Api.call(
-      `${url}/player_api.php?username=${userName}&password=${password}&type=m3u_plus&output=ts`
-    ).then((res) => {
-      if (res) {
-        console.log("response =>>", res);
-        navigation.navigate("Home");
-      }
-    });
-  }
+    if (userName == "") {
+      Alert.alert("User name field can't be empty");
+    } else if (password == "") {
+      Alert.alert("Password field can't be empty");
+    } else if (url == "") {
+      Alert.alert("Url field can't be empty");
+    } else {
+      Api.call(
+        `${url}/player_api.php?username=${userName}&password=${password}&type=m3u_plus&output=ts`
+      ).then((res) => {
+        if (res) {
+          console.log("response =>>", res);
+          navigation.navigate("Home");
+        }
+      });
+    }
   };
 
   return (

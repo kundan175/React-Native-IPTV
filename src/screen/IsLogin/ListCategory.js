@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
   View,
   Text,
@@ -20,82 +20,59 @@ import Api from "../../config/Api";
 const ListCategory = ({ route }) => {
   const headerName = route?.params?.headerName;
   const navigation = useNavigation();
+  const [data, setData] = useState("");
   // const dispatch = useDispatch()
   useEffect(() => {
     LiveCategoryList();
   }, []);
 
-  const DATA = [
-    {
-      id: 0,
-      title: "hello",
-    },
-    {
-      id: 1,
-      title: "hello",
-    },
-    {
-      id: 2,
-      title: "hello",
-    },
-    {
-      id: 3,
-      title: "hello",
-    },
-    {
-      id: 4,
-      title: "hello",
-    },
-    {
-      id: 5,
-      title: "hello",
-    },
-    {
-      id: 6,
-      title: "hello",
-    },
-    {
-      id: 7,
-      title: "hello",
-    },
-    {
-      id: 8,
-      title: "hello",
-    },
-  ];
-
   const LiveCategoryList = async () => {
     Api.call(
-      `http://ky-iptv.com:25461/player_api.php?username=mustest555&password=22334455&action=get_live_categories`,
+      `http://ky-iptv.com:25461/player_api.php?username=mustest555&password=22334455&action=${
+        headerName == "LIVE TV"
+          ? "get_live_categories"
+          : headerName == "MOVIES"
+          ? "get_vod_categories"
+          : "get_series_categories"
+      }`,
       "GET",
       null,
       true
     ).then((res) => {
-      console.log("->", res);
+      setData(res);
     });
   };
   const renderItem = ({ item }) => {
     return (
-      <View style={{ padding: 12, marginTop: wp(2) }}>
+      <View
+        style={{
+          padding: 10,
+          flex: 1,
+        }}
+      >
         <TouchableOpacity
-          onPress={() => navigation.navigate("MoviesCategory")}
+          onPress={() =>
+            navigation.navigate("MoviesCategory", {
+              type: headerName,
+              data: item,
+            })
+          }
           style={{
             backgroundColor: COLORS.orange,
-            width: wp(25),
-            height: wp(7),
+
             borderRadius: wp(3),
-            padding: wp(1),
+            padding: wp(2),
             justifyContent: "center",
           }}
         >
           <Text
             style={{
               color: COLORS.white,
-              fontSize: wp(3),
+              fontSize: 20,
               textAlign: "center",
             }}
           >
-            {item?.title}
+            {item?.category_name}
           </Text>
         </TouchableOpacity>
       </View>
@@ -141,8 +118,13 @@ const ListCategory = ({ route }) => {
             />
           </View>
         </View>
-        <View style={{ marginTop: wp(2), marginHorizontal: wp(2) }}>
-          <FlatList data={DATA} renderItem={renderItem} numColumns={3} />
+        <View
+          style={{
+            marginTop: wp(2),
+            marginHorizontal: wp(2),
+          }}
+        >
+          <FlatList data={data} renderItem={renderItem} numColumns={3} />
         </View>
       </View>
     </SafeAreaView>
