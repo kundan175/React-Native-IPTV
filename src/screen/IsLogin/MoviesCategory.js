@@ -101,36 +101,45 @@ const MoviesCategory = ({ route }) => {
             style={{
               backgroundColor: COLORS.orange,
               width: wp(14),
-              height: wp(16),
+              // height: wp(16),
               borderRadius: wp(3),
               justifyContent: "center",
               borderColor: COLORS.white,
               borderWidth: 1,
 
-              justifyContent: "flex-end",
+              // justifyContent: "flex-end",
             }}
           >
-            <Text
+                      {/* <View style={{height:wp(15),width:wp(14),marginBottom:wp(2)}}/> */}
+
+     
+            {/* <View style={{}}> */}
+       
+            {/* </View> */}
+            <Image
+            source={{ uri: item?.stream_icon }}
+            style={{
+              width: wp(13),
+              height: wp(17),
+              borderRadius: wp(3),marginHorizontal:wp(0.5)
+              // position: "absolute",
+              // right: wp(2.5),
+              // bottom: wp(5),
+            }}
+          />
+          <View style={{paddingHorizontal:wp(1),marginVertical:wp(1)}}>
+               <Text
               style={{
                 color: COLORS.black,
                 fontSize: 14,
-                textAlign: "center",
+                textAlign: "center",fontWeight:'700'
               }}
             >
               {item?.name}
             </Text>
+            </View>
           </View>
-          <Image
-            source={{ uri: item?.stream_icon }}
-            style={{
-              width: wp(13),
-              height: wp(15),
-              borderRadius: wp(3),
-              position: "absolute",
-              right: wp(2.5),
-              bottom: wp(2.5),
-            }}
-          />
+    
         </TouchableOpacity>
       </View>
     );

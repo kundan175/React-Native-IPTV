@@ -59,8 +59,8 @@ const CategoryInfo = ({ route }) => {
           style={{
             marginTop: wp(5),
             flexDirection: "row",
-            justifyContent: "space-evenly",
-            marginHorizontal: wp(5),
+            justifyContent: "center",
+            marginHorizontal: wp(5)
           }}
         >
           <Image
@@ -70,18 +70,18 @@ const CategoryInfo = ({ route }) => {
           <View
             style={{
               justifyContent: "space-between",
-              marginHorizontal: wp(10),
-              flex: 1,
+              marginHorizontal: wp(10),flex:1
+              // backgroundColor:'red'
             }}
           >
             <View
-              style={{ flexDirection: "row", justifyContent: "space-between" }}
+              style={{ flexDirection: "row",  }}
             >
               <Text style={{ color: Colors.white, fontSize: 22 }}>
                 Series Name:
               </Text>
-              <Text style={{ color: Colors.white, fontSize: 22 }}>
-                Night Manager
+              <Text style={{ color: Colors.white, fontSize: 22 ,marginLeft:wp(5),}}>
+                {item?.name}
               </Text>
             </View>
             <View
@@ -90,7 +90,7 @@ const CategoryInfo = ({ route }) => {
               <Text style={{ color: Colors.white, fontSize: 22 }}>
                 Director:
               </Text>
-              <Text style={{ color: Colors.white, fontSize: 22 }}>
+              <Text style={{ color: Colors.white, fontSize: 22,marginLeft:wp(3) }}>
                 Rahul Shetri
               </Text>
             </View>
