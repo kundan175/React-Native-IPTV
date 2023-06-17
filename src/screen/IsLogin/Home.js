@@ -156,6 +156,9 @@ const Home = () => {
               </Text>
             </TouchableOpacity>
             <TouchableOpacity
+              onPress={() => {
+                navigation.navigate("Login");
+              }}
               style={{
                 borderColor: "#4690EB",
                 height: hp(10),

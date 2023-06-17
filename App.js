@@ -9,7 +9,7 @@ import ListCategory from "./src/screen/IsLogin/ListCategory";
 import MoviesCategory from "./src/screen/IsLogin/MoviesCategory";
 import CategoryInfo from "./src/screen/IsLogin/CategoryInfo";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import VideoPlayer from "./src/screen/IsLogin/VideoPlayer";
+import VideoScreen from "./src/screen/IsLogin/VideoScreen";
 
 const App = () => {
   const Stack = createNativeStackNavigator();
@@ -26,7 +26,7 @@ const App = () => {
       <SafeAreaView style={{ flex: 1, backgroundColor: "white" }}>
         <NavigationContainer ref={navigationRef}>
           <Stack.Navigator
-            initialRouteName={global.user ? "Login" : "Home"}
+            initialRouteName={"Login"}
             screenOptions={{ headerShown: false }}
           >
             <Stack.Screen name="Login" component={Login} />
@@ -34,7 +34,7 @@ const App = () => {
             <Stack.Screen name="ListCategory" component={ListCategory} />
             <Stack.Screen name="MoviesCategory" component={MoviesCategory} />
             <Stack.Screen name="CategoryInfo" component={CategoryInfo} />
-            <Stack.Screen name="VideoPlayer" component={VideoPlayer} />
+            <Stack.Screen name="VideoScreen" component={VideoScreen} />
           </Stack.Navigator>
         </NavigationContainer>
       </SafeAreaView>

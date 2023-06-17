@@ -24,49 +24,6 @@ const MoviesCategory = ({ route }) => {
   console.log("ff", data);
   const navigation = useNavigation();
 
-  const DATA = [
-    {
-      id: 0,
-      title: "hello",
-    },
-    {
-      id: 1,
-      title: "hello",
-    },
-    {
-      id: 2,
-      title: "hello",
-    },
-    {
-      id: 3,
-      title: "hello",
-    },
-    {
-      id: 4,
-      title: "hello",
-    },
-    {
-      id: 5,
-      title: "hello",
-    },
-    {
-      id: 6,
-      title: "hello",
-    },
-    {
-      id: 7,
-      title: "hello",
-    },
-    {
-      id: 8,
-      title: "hello",
-    },
-    {
-      id: 9,
-      title: "hello",
-    },
-  ];
-
   useEffect(() => {
     LiveCategoryList();
   }, []);
@@ -94,7 +51,12 @@ const MoviesCategory = ({ route }) => {
       <View style={{ padding: 10, marginTop: wp(2), marginLeft: wp(2) }}>
         <TouchableOpacity
           onPress={() => {
-            navigation.navigate("CategoryInfo", { item: item, type: type });
+            console.log(item);
+
+            navigation.navigate("VideoScreen", {
+              videoUrl: item.stream_id,
+              type: type,
+            });
           }}
         >
           <View
@@ -110,36 +72,36 @@ const MoviesCategory = ({ route }) => {
               // justifyContent: "flex-end",
             }}
           >
-                      {/* <View style={{height:wp(15),width:wp(14),marginBottom:wp(2)}}/> */}
+            {/* <View style={{height:wp(15),width:wp(14),marginBottom:wp(2)}}/> */}
 
-     
             {/* <View style={{}}> */}
-       
+
             {/* </View> */}
             <Image
-            source={{ uri: item?.stream_icon }}
-            style={{
-              width: wp(13),
-              height: wp(17),
-              borderRadius: wp(3),marginHorizontal:wp(0.5)
-              // position: "absolute",
-              // right: wp(2.5),
-              // bottom: wp(5),
-            }}
-          />
-          <View style={{paddingHorizontal:wp(1),marginVertical:wp(1)}}>
-               <Text
+              source={{ uri: item?.stream_icon }}
               style={{
-                color: COLORS.black,
-                fontSize: 14,
-                textAlign: "center",fontWeight:'700'
+                width: wp(13),
+                height: wp(17),
+                borderRadius: wp(3),
+                marginHorizontal: wp(0.5),
+                // position: "absolute",
+                // right: wp(2.5),
+                // bottom: wp(5),
               }}
-            >
-              {item?.name}
-            </Text>
+            />
+            <View style={{ paddingHorizontal: wp(1), marginVertical: wp(1) }}>
+              <Text
+                style={{
+                  color: COLORS.black,
+                  fontSize: 14,
+                  textAlign: "center",
+                  fontWeight: "700",
+                }}
+              >
+                {item?.name}
+              </Text>
             </View>
           </View>
-    
         </TouchableOpacity>
       </View>
     );
