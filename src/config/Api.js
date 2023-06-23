@@ -1,16 +1,23 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { customAlertfuction } from "../store/counterSlice";
+import {
+  customAlertfuction,
+  isLoaderDisable,
+  isLoaderVisible,
+} from "../store/counterSlice";
 
 export default Api = {
   call: async function (
     url,
     method = "POST",
     bodyData = null,
-    hastoken = true
+    hastoken = true,
+    dispatch
   ) {
     var header = {};
     var fullUrl = url;
     var storedUserToken = await AsyncStorage.getItem("token");
+    dispatch(isLoaderVisible(true));
+
     if (storedUserToken) {
       global.token = storedUserToken;
     }
@@ -49,15 +56,19 @@ export default Api = {
       headers: header,
     })
       .then((response) => {
+        dispatch(isLoaderDisable());
         console.log("response.status", response.status);
         if (response.status == 201 || response.status == 200) {
           return response.json();
         } else {
-          console.log("errr", response.json());
         }
       })
       .catch((err) => {
+        dispatch(isLoaderDisable());
         console.log("error ====", err.message);
+      })
+      .finally(() => {
+        dispatch(isLoaderDisable());
       });
   },
 };

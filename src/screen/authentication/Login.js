@@ -18,12 +18,14 @@ import NativeTextInput from "../../components/NativeTextInput";
 import { useNavigation } from "@react-navigation/native";
 import Api from "../../config/Api";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { useDispatch } from "react-redux";
 
 const Login = () => {
   const navigation = useNavigation();
   const [url, setUrl] = useState("");
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
+  const dispatch = useDispatch();
 
   const LoginApi = async () => {
     if (userName == "") {
@@ -34,7 +36,11 @@ const Login = () => {
       Alert.alert("Url field can't be empty");
     } else {
       Api.call(
-        `${url}/player_api.php?username=${userName}&password=${password}&type=m3u_plus&output=ts`
+        `${url}/player_api.php?username=${userName}&password=${password}&type=m3u_plus&output=ts`,
+        "POST",
+        null,
+        false,
+        dispatch
       ).then((res) => {
         if (res) {
           AsyncStorage.setItem("password", password);

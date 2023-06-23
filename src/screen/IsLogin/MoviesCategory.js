@@ -16,6 +16,7 @@ import { useNavigation } from "@react-navigation/native";
 import ImagePath from "../../assets/ImagePath";
 import { COLORS } from "../../config/Constants";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { useDispatch } from "react-redux";
 
 const MoviesCategory = ({ route }) => {
   const type = route?.params?.type;
@@ -23,6 +24,7 @@ const MoviesCategory = ({ route }) => {
   const [categoryData, setCategoryData] = useState("");
   console.log("ff", data);
   const navigation = useNavigation();
+  const dispatch = useDispatch();
 
   useEffect(() => {
     LiveCategoryList();
@@ -40,7 +42,8 @@ const MoviesCategory = ({ route }) => {
       }&category_id=${data.category_id}`,
       "GET",
       null,
-      true
+      true,
+      dispatch
     ).then((res) => {
       console.log(res);
       setCategoryData(res);

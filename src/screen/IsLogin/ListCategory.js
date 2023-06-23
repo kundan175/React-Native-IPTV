@@ -17,12 +17,14 @@ import ImagePath from "../../assets/ImagePath";
 import { COLORS } from "../../config/Constants";
 import Api from "../../config/Api";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { useDispatch } from "react-redux";
 
 const ListCategory = ({ route }) => {
   const headerName = route?.params?.headerName;
   const navigation = useNavigation();
   const [data, setData] = useState("");
-  // const dispatch = useDispatch()
+  const dispatch = useDispatch();
+
   useEffect(() => {
     LiveCategoryList();
   }, []);
@@ -40,7 +42,8 @@ const ListCategory = ({ route }) => {
       }`,
       "GET",
       null,
-      true
+      true,
+      dispatch
     ).then((res) => {
       setData(res);
     });

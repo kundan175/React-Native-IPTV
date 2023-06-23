@@ -10,12 +10,15 @@ import MoviesCategory from "./src/screen/IsLogin/MoviesCategory";
 import CategoryInfo from "./src/screen/IsLogin/CategoryInfo";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import VideoScreen from "./src/screen/IsLogin/VideoScreen";
+import { Loader } from "./src/components/Loader";
+import { useSelector } from "react-redux";
 
 const App = () => {
   const Stack = createNativeStackNavigator();
   useEffect(() => {
     getData();
   }, []);
+  const isLoaderTrue = useSelector((state) => state.firstReducer.isLoader);
 
   const getData = async () => {
     global.user = await AsyncStorage.getItem("userName");
@@ -38,6 +41,7 @@ const App = () => {
           </Stack.Navigator>
         </NavigationContainer>
       </SafeAreaView>
+      <Loader modalVisible={isLoaderTrue} />
     </View>
   );
 };
