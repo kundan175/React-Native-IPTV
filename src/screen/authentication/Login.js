@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   View,
   Text,
@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   SafeAreaView,
   Alert,
+  Linking,
 } from "react-native";
 import { COLORS } from "../../config/Constants";
 import {
@@ -19,6 +20,7 @@ import { useNavigation } from "@react-navigation/native";
 import Api from "../../config/Api";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useDispatch } from "react-redux";
+import SplashScreen from "react-native-splash-screen";
 
 const Login = () => {
   const navigation = useNavigation();
@@ -26,6 +28,19 @@ const Login = () => {
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    setTimeout(() => {
+      console.log("global.user", global.user);
+      if (global.user) {
+        navigation.reset({
+          index: 0,
+          routes: [{ name: "Home" }],
+        });
+      }
+      SplashScreen.hide();
+    }, 2000);
+  }, []);
 
   const LoginApi = async () => {
     if (userName == "") {
@@ -47,7 +62,10 @@ const Login = () => {
           AsyncStorage.setItem("url", url);
           AsyncStorage.setItem("userName", userName);
           console.log("response =>>", res);
-          navigation.navigate("Home");
+          navigation.reset({
+            index: 0,
+            routes: [{ name: "Home" }],
+          });
         }
       });
     }
@@ -63,10 +81,36 @@ const Login = () => {
             alignItems: "center",
           }}
         >
-          <Image
-            style={{ height: wp(15), width: wp(15) }}
-            source={ImagePath.AppLogo}
-          />
+          <View style={{ alignItems: "center" }}>
+            <Image
+              style={{ height: wp(15), width: wp(15) }}
+              source={ImagePath.AppLogo}
+              resizeMode="contain"
+            />
+            <TouchableOpacity
+              onPress={() => Linking.openURL("https://iptvsmartflixplayer.com")}
+              style={{
+                height: hp(10),
+                backgroundColor: "#FE7702",
+                marginTop: wp(4),
+                marginHorizontal: wp(5),
+                borderRadius: wp(1),
+                justifyContent: "center",
+              }}
+            >
+              <Text
+                style={{
+                  color: "white",
+                  fontSize: 15,
+                  marginLeft: wp(2),
+                  marginRight: wp(2),
+                }}
+              >
+                WEBSITE
+              </Text>
+            </TouchableOpacity>
+          </View>
+
           <View style={{ marginTop: wp(3) }}>
             <Shadow
               startColor={"#FE753A"}
@@ -99,6 +143,7 @@ const Login = () => {
                     onSubmitEditing={() => {}}
                     returnKeyType="next"
                     value={password}
+                    secureTextEntry={true}
                     onChangeText={(value) => setPassword(value)}
                   />
                 </View>

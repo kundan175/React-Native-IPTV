@@ -87,10 +87,8 @@ const MoviesCategory = ({ route }) => {
                 height: wp(17),
                 borderRadius: wp(3),
                 marginHorizontal: wp(0.5),
-                // position: "absolute",
-                // right: wp(2.5),
-                // bottom: wp(5),
               }}
+              resizeMode="contain"
             />
             <View style={{ paddingHorizontal: wp(1), marginVertical: wp(1) }}>
               <Text

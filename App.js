@@ -14,29 +14,22 @@ import { Loader } from "./src/components/Loader";
 import { useDispatch, useSelector } from "react-redux";
 import ComingSoonModal from "./src/components/ComingSoonModal";
 import { iscomingModalOpen } from "./src/store/counterSlice";
-import SplashScreen from 'react-native-splash-screen'
+import SplashScreen from "react-native-splash-screen";
+
 const App = () => {
   const Stack = createNativeStackNavigator();
-
-
-  useEffect(()=> {
-    setTimeout(() => {
-     console.log('safdsf')
-      SplashScreen.hide();
-    }, 2000);
-
-  },[])
-  useEffect(() => {
-    getData();
-  }, []);
   const isLoaderTrue = useSelector((state) => state.firstReducer.isLoader);
   const comingModal = useSelector((state) => state.firstReducer.comingModal);
   const dispatch = useDispatch();
 
+  useEffect(() => {
+    getData();
+  }, []);
+
   const getData = async () => {
     global.user = await AsyncStorage.getItem("userName");
-    console.log("userName", await AsyncStorage.getItem("userName"));
   };
+
   return (
     <View style={{ flex: 1 }}>
       <SafeAreaView style={{ flex: 1, backgroundColor: "white" }}>

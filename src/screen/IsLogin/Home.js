@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   SafeAreaView,
   StatusBar,
+  Linking,
 } from "react-native";
 import {
   widthPercentageToDP as wp,
@@ -126,7 +127,7 @@ const Home = () => {
           </View>
           <View style={{}}>
             <TouchableOpacity
-              onPress={() => dispatch(iscomingModalOpen())}
+              onPress={() => Linking.openURL("https://iptvsmartflixplayer.com")}
               style={{
                 borderColor: "#4690EB",
                 height: hp(10),
@@ -141,11 +142,13 @@ const Home = () => {
               <Text
                 style={{ color: "#C13C03", fontSize: 23, fontWeight: "400" }}
               >
-                Settings
+                Website
               </Text>
             </TouchableOpacity>
             <TouchableOpacity
-              onPress={() => dispatch(iscomingModalOpen())}
+              onPress={() =>
+                Linking.openURL("http://webtv.iptvsmartflixplayer.com/")
+              }
               style={{
                 borderColor: "#4690EB",
                 height: hp(10),
@@ -160,17 +163,13 @@ const Home = () => {
               <Text
                 style={{ color: "#C13C03", fontSize: 23, fontWeight: "400" }}
               >
-                Profile
+                Webtvplayer
               </Text>
             </TouchableOpacity>
             <TouchableOpacity
               onPress={async () => {
-                try {
-                  await AsyncStorage.clear();
-                  console.log("AsyncStorage cleared successfully.");
-                } catch (error) {
-                  console.log("Error clearing AsyncStorage:", error);
-                }
+                AsyncStorage.clear();
+                global.user = "";
                 navigation.reset({
                   index: 0,
                   routes: [{ name: "Login" }],
