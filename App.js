@@ -14,9 +14,18 @@ import { Loader } from "./src/components/Loader";
 import { useDispatch, useSelector } from "react-redux";
 import ComingSoonModal from "./src/components/ComingSoonModal";
 import { iscomingModalOpen } from "./src/store/counterSlice";
-
+import SplashScreen from 'react-native-splash-screen'
 const App = () => {
   const Stack = createNativeStackNavigator();
+
+
+  useEffect(()=> {
+    setTimeout(() => {
+     console.log('safdsf')
+      SplashScreen.hide();
+    }, 2000);
+
+  },[])
   useEffect(() => {
     getData();
   }, []);
