@@ -14,8 +14,12 @@ import {
 import { useNavigation } from "@react-navigation/native";
 import ImagePath from "../../assets/ImagePath";
 import { COLORS } from "../../config/Constants";
+import { useDispatch } from "react-redux";
+import { iscomingModalOpen } from "../../store/counterSlice";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const Home = () => {
+  const dispatch = useDispatch();
   const navigation = useNavigation();
   return (
     <SafeAreaView
@@ -91,8 +95,10 @@ const Home = () => {
               </Text>
             </TouchableOpacity>
             <TouchableOpacity
-              onPress={() =>
-                navigation.navigate("ListCategory", { headerName: "SERIES" })
+              onPress={
+                () => dispatch(iscomingModalOpen())
+
+                // navigation.navigate("ListCategory", { headerName: "SERIES" })
               }
               style={{ marginLeft: wp(2) }}
             >
@@ -120,6 +126,7 @@ const Home = () => {
           </View>
           <View style={{}}>
             <TouchableOpacity
+              onPress={() => dispatch(iscomingModalOpen())}
               style={{
                 borderColor: "#4690EB",
                 height: hp(10),
@@ -138,6 +145,7 @@ const Home = () => {
               </Text>
             </TouchableOpacity>
             <TouchableOpacity
+              onPress={() => dispatch(iscomingModalOpen())}
               style={{
                 borderColor: "#4690EB",
                 height: hp(10),
@@ -156,8 +164,17 @@ const Home = () => {
               </Text>
             </TouchableOpacity>
             <TouchableOpacity
-              onPress={() => {
-                navigation.navigate("Login");
+              onPress={async () => {
+                try {
+                  await AsyncStorage.clear();
+                  console.log("AsyncStorage cleared successfully.");
+                } catch (error) {
+                  console.log("Error clearing AsyncStorage:", error);
+                }
+                navigation.reset({
+                  index: 0,
+                  routes: [{ name: "Login" }],
+                });
               }}
               style={{
                 borderColor: "#4690EB",

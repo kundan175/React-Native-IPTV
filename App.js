@@ -11,7 +11,9 @@ import CategoryInfo from "./src/screen/IsLogin/CategoryInfo";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import VideoScreen from "./src/screen/IsLogin/VideoScreen";
 import { Loader } from "./src/components/Loader";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import ComingSoonModal from "./src/components/ComingSoonModal";
+import { iscomingModalOpen } from "./src/store/counterSlice";
 
 const App = () => {
   const Stack = createNativeStackNavigator();
@@ -19,6 +21,8 @@ const App = () => {
     getData();
   }, []);
   const isLoaderTrue = useSelector((state) => state.firstReducer.isLoader);
+  const comingModal = useSelector((state) => state.firstReducer.comingModal);
+  const dispatch = useDispatch();
 
   const getData = async () => {
     global.user = await AsyncStorage.getItem("userName");
@@ -41,6 +45,12 @@ const App = () => {
           </Stack.Navigator>
         </NavigationContainer>
       </SafeAreaView>
+      <ComingSoonModal
+        onPress={() => {
+          dispatch(iscomingModalOpen());
+        }}
+        visible={comingModal}
+      />
       <Loader modalVisible={isLoaderTrue} />
     </View>
   );
