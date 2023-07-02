@@ -1,0 +1,86 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.iptvsmartflixplayer"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/kundan/Documents/Shubham Sir/-IPTVSmar/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/Users/kundan/Documents/Shubham Sir/-IPTVSmar/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/kundan/Documents/Shubham Sir/-IPTVSmar/android/app/src/main/AndroidManifest.xml:3:5-67
+11-->/Users/kundan/Documents/Shubham Sir/-IPTVSmar/android/app/src/main/AndroidManifest.xml:3:22-64
+12
+13    <application
+13-->/Users/kundan/Documents/Shubham Sir/-IPTVSmar/android/app/src/main/AndroidManifest.xml:5:5-27:19
+14        android:name="com.iptvsmartflixplayer.MainApplication"
+14-->/Users/kundan/Documents/Shubham Sir/-IPTVSmar/android/app/src/main/AndroidManifest.xml:6:7-38
+15        android:allowBackup="false"
+15-->/Users/kundan/Documents/Shubham Sir/-IPTVSmar/android/app/src/main/AndroidManifest.xml:10:7-34
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.7.0] /Users/kundan/.gradle/caches/transforms-3/a74319f16e76beadbf53eb2669b709f5/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+17        android:icon="@mipmap/ic_launcher"
+17-->/Users/kundan/Documents/Shubham Sir/-IPTVSmar/android/app/src/main/AndroidManifest.xml:8:7-41
+18        android:label="@string/app_name"
+18-->/Users/kundan/Documents/Shubham Sir/-IPTVSmar/android/app/src/main/AndroidManifest.xml:7:7-39
+19        android:roundIcon="@mipmap/ic_launcher"
+19-->/Users/kundan/Documents/Shubham Sir/-IPTVSmar/android/app/src/main/AndroidManifest.xml:9:7-46
+20        android:theme="@style/AppTheme"
+20-->/Users/kundan/Documents/Shubham Sir/-IPTVSmar/android/app/src/main/AndroidManifest.xml:11:7-38
+21        android:usesCleartextTraffic="true" >
+21-->/Users/kundan/Documents/Shubham Sir/-IPTVSmar/android/app/src/main/AndroidManifest.xml:12:13-48
+22        <activity
+22-->/Users/kundan/Documents/Shubham Sir/-IPTVSmar/android/app/src/main/AndroidManifest.xml:14:7-26:18
+23            android:name="com.iptvsmartflixplayer.MainActivity"
+23-->/Users/kundan/Documents/Shubham Sir/-IPTVSmar/android/app/src/main/AndroidManifest.xml:15:9-37
+24            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+24-->/Users/kundan/Documents/Shubham Sir/-IPTVSmar/android/app/src/main/AndroidManifest.xml:18:9-118
+25            android:exported="true"
+25-->/Users/kundan/Documents/Shubham Sir/-IPTVSmar/android/app/src/main/AndroidManifest.xml:21:9-32
+26            android:label="@string/app_name"
+26-->/Users/kundan/Documents/Shubham Sir/-IPTVSmar/android/app/src/main/AndroidManifest.xml:16:9-41
+27            android:launchMode="singleTask"
+27-->/Users/kundan/Documents/Shubham Sir/-IPTVSmar/android/app/src/main/AndroidManifest.xml:19:9-40
+28            android:screenOrientation="landscape"
+28-->/Users/kundan/Documents/Shubham Sir/-IPTVSmar/android/app/src/main/AndroidManifest.xml:17:9-46
+29            android:windowSoftInputMode="adjustResize" >
+29-->/Users/kundan/Documents/Shubham Sir/-IPTVSmar/android/app/src/main/AndroidManifest.xml:20:9-51
+30            <intent-filter>
+30-->/Users/kundan/Documents/Shubham Sir/-IPTVSmar/android/app/src/main/AndroidManifest.xml:22:9-25:25
+31                <action android:name="android.intent.action.MAIN" />
+31-->/Users/kundan/Documents/Shubham Sir/-IPTVSmar/android/app/src/main/AndroidManifest.xml:23:13-65
+31-->/Users/kundan/Documents/Shubham Sir/-IPTVSmar/android/app/src/main/AndroidManifest.xml:23:21-62
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->/Users/kundan/Documents/Shubham Sir/-IPTVSmar/android/app/src/main/AndroidManifest.xml:24:13-73
+33-->/Users/kundan/Documents/Shubham Sir/-IPTVSmar/android/app/src/main/AndroidManifest.xml:24:23-70
+34            </intent-filter>
+35        </activity>
+36
+37        <provider
+37-->[androidx.emoji2:emoji2:1.0.0] /Users/kundan/.gradle/caches/transforms-3/1f6b54f5cbdc781497e11a050562adc3/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+38            android:name="androidx.startup.InitializationProvider"
+38-->[androidx.emoji2:emoji2:1.0.0] /Users/kundan/.gradle/caches/transforms-3/1f6b54f5cbdc781497e11a050562adc3/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+39            android:authorities="com.iptvsmartflixplayer.androidx-startup"
+39-->[androidx.emoji2:emoji2:1.0.0] /Users/kundan/.gradle/caches/transforms-3/1f6b54f5cbdc781497e11a050562adc3/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+40            android:exported="false" >
+40-->[androidx.emoji2:emoji2:1.0.0] /Users/kundan/.gradle/caches/transforms-3/1f6b54f5cbdc781497e11a050562adc3/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+41            <meta-data
+41-->[androidx.emoji2:emoji2:1.0.0] /Users/kundan/.gradle/caches/transforms-3/1f6b54f5cbdc781497e11a050562adc3/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+42                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+42-->[androidx.emoji2:emoji2:1.0.0] /Users/kundan/.gradle/caches/transforms-3/1f6b54f5cbdc781497e11a050562adc3/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+43                android:value="androidx.startup" />
+43-->[androidx.emoji2:emoji2:1.0.0] /Users/kundan/.gradle/caches/transforms-3/1f6b54f5cbdc781497e11a050562adc3/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+44            <meta-data
+44-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/kundan/.gradle/caches/transforms-3/00e31c29ff8f041470feab912fa976cf/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+45                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+45-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/kundan/.gradle/caches/transforms-3/00e31c29ff8f041470feab912fa976cf/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+46                android:value="androidx.startup" />
+46-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/kundan/.gradle/caches/transforms-3/00e31c29ff8f041470feab912fa976cf/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+47        </provider>
+48    </application>
+49
+50</manifest>

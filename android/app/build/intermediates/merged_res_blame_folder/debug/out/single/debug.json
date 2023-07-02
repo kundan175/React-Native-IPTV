@@ -1,54 +1,34 @@
 [
     {
-        "merged": "/Users/kundan/.gradle/daemon/7.5.1/com.iptvsmartflixplayer.app-merged_res-30:/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "/Users/kundan/.gradle/daemon/7.5.1/com.iptvsmartflixplayer.app-main-32:/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.iptvsmartflixplayer.app-main-32:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/kundan/.gradle/daemon/7.5.1/com.iptvsmartflixplayer.app-merged_res-30:/layout_launch_screen.xml.flat",
-        "source": "/Users/kundan/.gradle/daemon/7.5.1/com.iptvsmartflixplayer.app-main-32:/layout/launch_screen.xml"
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable_rn_edit_text_material.xml.flat",
+        "source": "com.iptvsmartflixplayer.app-main-32:/drawable/rn_edit_text_material.xml"
     },
     {
-        "merged": "/Users/kundan/.gradle/daemon/7.5.1/com.iptvsmartflixplayer.app-merged_res-30:/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/kundan/.gradle/daemon/7.5.1/com.iptvsmartflixplayer.app-main-32:/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable_launch_screen.png.flat",
+        "source": "com.iptvsmartflixplayer.app-main-32:/drawable/launch_screen.png"
     },
     {
-        "merged": "/Users/kundan/.gradle/daemon/7.5.1/com.iptvsmartflixplayer.app-merged_res-30:/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "/Users/kundan/.gradle/daemon/7.5.1/com.iptvsmartflixplayer.app-main-32:/mipmap-hdpi/ic_launcher.png"
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.iptvsmartflixplayer.app-main-32:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/kundan/.gradle/daemon/7.5.1/com.iptvsmartflixplayer.app-merged_res-30:/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "/Users/kundan/.gradle/daemon/7.5.1/com.iptvsmartflixplayer.app-main-32:/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.iptvsmartflixplayer.app-main-32:/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/kundan/.gradle/daemon/7.5.1/com.iptvsmartflixplayer.app-merged_res-30:/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "/Users/kundan/.gradle/daemon/7.5.1/com.iptvsmartflixplayer.app-main-32:/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/layout_launch_screen.xml.flat",
+        "source": "com.iptvsmartflixplayer.app-main-32:/layout/launch_screen.xml"
     },
     {
-        "merged": "/Users/kundan/.gradle/daemon/7.5.1/com.iptvsmartflixplayer.app-merged_res-30:/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/kundan/.gradle/daemon/7.5.1/com.iptvsmartflixplayer.app-main-32:/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.iptvsmartflixplayer.app-main-32:/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/kundan/.gradle/daemon/7.5.1/com.iptvsmartflixplayer.app-merged_res-30:/drawable_launch_screen.png.flat",
-        "source": "/Users/kundan/.gradle/daemon/7.5.1/com.iptvsmartflixplayer.app-main-32:/drawable/launch_screen.png"
-    },
-    {
-        "merged": "/Users/kundan/.gradle/daemon/7.5.1/com.iptvsmartflixplayer.app-merged_res-30:/drawable_rn_edit_text_material.xml.flat",
-        "source": "/Users/kundan/.gradle/daemon/7.5.1/com.iptvsmartflixplayer.app-main-32:/drawable/rn_edit_text_material.xml"
-    },
-    {
-        "merged": "/Users/kundan/.gradle/daemon/7.5.1/com.iptvsmartflixplayer.app-merged_res-30:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/kundan/.gradle/daemon/7.5.1/com.iptvsmartflixplayer.app-main-32:/mipmap-xxxhdpi/ic_launcher_round.png"
-    },
-    {
-        "merged": "/Users/kundan/.gradle/daemon/7.5.1/com.iptvsmartflixplayer.app-merged_res-30:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "/Users/kundan/.gradle/daemon/7.5.1/com.iptvsmartflixplayer.app-main-32:/mipmap-xhdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/Users/kundan/.gradle/daemon/7.5.1/com.iptvsmartflixplayer.app-merged_res-30:/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "/Users/kundan/.gradle/daemon/7.5.1/com.iptvsmartflixplayer.app-main-32:/mipmap-mdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/Users/kundan/.gradle/daemon/7.5.1/com.iptvsmartflixplayer.app-merged_res-30:/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "/Users/kundan/.gradle/daemon/7.5.1/com.iptvsmartflixplayer.app-main-32:/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.iptvsmartflixplayer.app-main-32:/mipmap-xhdpi/ic_launcher.png"
     }
 ]

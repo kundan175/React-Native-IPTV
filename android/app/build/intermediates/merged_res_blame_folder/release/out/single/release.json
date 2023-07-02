@@ -1,0 +1,302 @@
+[
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xxhdpi_node_modules_reactnativevideocontrols_assets_img_bottomvignette.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xxhdpi/node_modules_reactnativevideocontrols_assets_img_bottomvignette.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xxhdpi_node_modules_reactnativevideocontrols_assets_img_erroricon.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xxhdpi/node_modules_reactnativevideocontrols_assets_img_erroricon.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xhdpi_src_assets_image_livetvicon.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xhdpi/src_assets_image_livetvicon.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xxhdpi_src_assets_image_search.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xxhdpi/src_assets_image_search.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable_rn_edit_text_material.xml.flat",
+        "source": "com.iptvsmartflixplayer.app-main-31:/drawable/rn_edit_text_material.xml"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-mdpi_src_assets_image_seriesicon.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-mdpi/src_assets_image_seriesicon.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xxhdpi_node_modules_reactnativevideocontrols_assets_img_shrink.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xxhdpi/node_modules_reactnativevideocontrols_assets_img_shrink.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xhdpi_src_assets_image_homescreenlogo.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xhdpi/src_assets_image_homescreenlogo.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-mdpi_src_assets_image_liveicon.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-mdpi/src_assets_image_liveicon.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable_launch_screen.png.flat",
+        "source": "com.iptvsmartflixplayer.app-main-31:/drawable/launch_screen.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-mdpi_node_modules_reactnativevideocontrols_assets_img_back.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-mdpi/node_modules_reactnativevideocontrols_assets_img_back.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-mdpi_src_assets_image_applogo.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-mdpi/src_assets_image_applogo.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xxhdpi_src_assets_image_livetvicon.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xxhdpi/src_assets_image_livetvicon.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-mdpi_node_modules_reactnativevideocontrols_assets_img_erroricon.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-mdpi/node_modules_reactnativevideocontrols_assets_img_erroricon.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xxhdpi_node_modules_reactnativevideocontrols_assets_img_pause.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xxhdpi/node_modules_reactnativevideocontrols_assets_img_pause.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xhdpi_node_modules_reactnativevideocontrols_assets_img_bottomvignette.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xhdpi/node_modules_reactnativevideocontrols_assets_img_bottomvignette.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-mdpi_node_modules_reactnative_libraries_newappscreen_components_logo.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-mdpi/node_modules_reactnative_libraries_newappscreen_components_logo.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xhdpi_node_modules_reactnativevideocontrols_assets_img_topvignette.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xhdpi/node_modules_reactnativevideocontrols_assets_img_topvignette.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xhdpi_node_modules_reactnativevideocontrols_assets_img_expand.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xhdpi/node_modules_reactnativevideocontrols_assets_img_expand.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-mdpi_node_modules_reactnativevideocontrols_assets_img_topvignette.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-mdpi/node_modules_reactnativevideocontrols_assets_img_topvignette.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-mdpi_node_modules_reactnativevideocontrols_assets_img_play.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-mdpi/node_modules_reactnativevideocontrols_assets_img_play.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-mdpi_node_modules_reactnativevideocontrols_assets_img_loadericon.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-mdpi/node_modules_reactnativevideocontrols_assets_img_loadericon.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-mdpi_src_assets_image_moviespopcorn.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-mdpi/src_assets_image_moviespopcorn.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-mdpi_src_assets_image_backarrow.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-mdpi/src_assets_image_backarrow.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-mdpi_node_modules_reactnativevideocontrols_assets_img_volume.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-mdpi/node_modules_reactnativevideocontrols_assets_img_volume.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xhdpi_src_assets_image_applogo.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xhdpi/src_assets_image_applogo.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xxhdpi_node_modules_reactnativevideocontrols_assets_img_topvignette.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xxhdpi/node_modules_reactnativevideocontrols_assets_img_topvignette.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xxhdpi_src_assets_image_seriesicon.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xxhdpi/src_assets_image_seriesicon.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xxhdpi_node_modules_reactnativevideocontrols_assets_img_expand.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xxhdpi/node_modules_reactnativevideocontrols_assets_img_expand.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xhdpi_node_modules_reactnativevideocontrols_assets_img_volume.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xhdpi/node_modules_reactnativevideocontrols_assets_img_volume.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xxhdpi_src_assets_image_homescreenlogo.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xxhdpi/src_assets_image_homescreenlogo.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xhdpi_src_assets_image_movieimage.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xhdpi/src_assets_image_movieimage.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xhdpi_node_modules_reactnativevideocontrols_assets_img_pause.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xhdpi/node_modules_reactnativevideocontrols_assets_img_pause.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-mdpi_src_assets_image_livetvicon.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-mdpi/src_assets_image_livetvicon.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xxhdpi_src_assets_image_appdrawer.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xxhdpi/src_assets_image_appdrawer.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xhdpi_node_modules_reactnativevideocontrols_assets_img_back.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xhdpi/node_modules_reactnativevideocontrols_assets_img_back.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xxhdpi_src_assets_image_applogo.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xxhdpi/src_assets_image_applogo.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xhdpi_src_assets_image_seriesicon.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xhdpi/src_assets_image_seriesicon.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xhdpi_src_assets_image_moviespopcorn.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xhdpi/src_assets_image_moviespopcorn.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xxhdpi_node_modules_reactnativevideocontrols_assets_img_volume.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xxhdpi/node_modules_reactnativevideocontrols_assets_img_volume.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xxxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xxxhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xxhdpi_src_assets_image_movieimage.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xxhdpi/src_assets_image_movieimage.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xxhdpi_node_modules_reactnativevideocontrols_assets_img_play.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xxhdpi/node_modules_reactnativevideocontrols_assets_img_play.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.iptvsmartflixplayer.app-main-31:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xhdpi_node_modules_reactnativevideocontrols_assets_img_loadericon.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xhdpi/node_modules_reactnativevideocontrols_assets_img_loadericon.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xhdpi_node_modules_reactnativevideocontrols_assets_img_play.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xhdpi/node_modules_reactnativevideocontrols_assets_img_play.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backiconmask.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backiconmask.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.iptvsmartflixplayer.app-main-31:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xxhdpi_src_assets_image_backarrow.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xxhdpi/src_assets_image_backarrow.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xhdpi_src_assets_image_search.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xhdpi/src_assets_image_search.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-mdpi_node_modules_reactnativevideocontrols_assets_img_bottomvignette.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-mdpi/node_modules_reactnativevideocontrols_assets_img_bottomvignette.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-mdpi_node_modules_reactnativevideocontrols_assets_img_pause.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-mdpi/node_modules_reactnativevideocontrols_assets_img_pause.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-hdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-hdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xhdpi_node_modules_reactnativevideocontrols_assets_img_shrink.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xhdpi/node_modules_reactnativevideocontrols_assets_img_shrink.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.iptvsmartflixplayer.app-main-31:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/layout_launch_screen.xml.flat",
+        "source": "com.iptvsmartflixplayer.app-main-31:/layout/launch_screen.xml"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-mdpi_node_modules_reactnativevideocontrols_assets_img_expand.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-mdpi/node_modules_reactnativevideocontrols_assets_img_expand.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-mdpi_src_assets_image_appdrawer.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-mdpi/src_assets_image_appdrawer.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-mdpi_src_assets_image_homescreenlogo.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-mdpi/src_assets_image_homescreenlogo.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xhdpi_src_assets_image_appdrawer.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xhdpi/src_assets_image_appdrawer.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xhdpi_src_assets_image_liveicon.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xhdpi/src_assets_image_liveicon.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.iptvsmartflixplayer.app-main-31:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-mdpi_node_modules_reactnativevideocontrols_assets_img_shrink.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-mdpi/node_modules_reactnativevideocontrols_assets_img_shrink.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xxhdpi_node_modules_reactnativevideocontrols_assets_img_back.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xxhdpi/node_modules_reactnativevideocontrols_assets_img_back.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-mdpi_src_assets_image_movieimage.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-mdpi/src_assets_image_movieimage.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xxhdpi_node_modules_reactnativevideocontrols_assets_img_loadericon.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xxhdpi/node_modules_reactnativevideocontrols_assets_img_loadericon.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.iptvsmartflixplayer.app-main-31:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xxhdpi_src_assets_image_moviespopcorn.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xxhdpi/src_assets_image_moviespopcorn.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xhdpi_src_assets_image_backarrow.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xhdpi/src_assets_image_backarrow.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xhdpi_node_modules_reactnativevideocontrols_assets_img_erroricon.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xhdpi/node_modules_reactnativevideocontrols_assets_img_erroricon.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xxhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-mdpi_src_assets_image_search.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-mdpi/src_assets_image_search.png"
+    },
+    {
+        "merged": "com.iptvsmartflixplayer.app-merged_res-30:/drawable-xxhdpi_src_assets_image_liveicon.png.flat",
+        "source": "com.iptvsmartflixplayer.app-react-25:/drawable-xxhdpi/src_assets_image_liveicon.png"
+    }
+]

@@ -7,6 +7,7 @@ import {
   SafeAreaView,
   StatusBar,
   Linking,
+  Alert,
 } from "react-native";
 import {
   widthPercentageToDP as wp,
@@ -168,12 +169,24 @@ const Home = () => {
             </TouchableOpacity>
             <TouchableOpacity
               onPress={async () => {
-                AsyncStorage.clear();
-                global.user = "";
-                navigation.reset({
-                  index: 0,
-                  routes: [{ name: "Login" }],
-                });
+                Alert.alert("Logout", "Are you sure you want to logout?", [
+                  {
+                    text: "No",
+                    onPress: () => console.log("Cancel Pressed"),
+                    style: "cancel",
+                  },
+                  {
+                    text: "Yes",
+                    onPress: () => {
+                      AsyncStorage.clear();
+                      global.user = "";
+                      navigation.reset({
+                        index: 0,
+                        routes: [{ name: "Login" }],
+                      });
+                    },
+                  },
+                ]);
               }}
               style={{
                 borderColor: "#4690EB",

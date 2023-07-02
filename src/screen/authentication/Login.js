@@ -66,6 +66,8 @@ const Login = () => {
             index: 0,
             routes: [{ name: "Home" }],
           });
+        } else {
+          Alert.alert("Wrong credentials");
         }
       });
     }

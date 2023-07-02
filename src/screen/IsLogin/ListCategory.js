@@ -116,18 +116,19 @@ const ListCategory = ({ route }) => {
           <View style={{ flexDirection: "row" }}>
             <Image
               source={ImagePath.Search}
-              style={{ height: wp(3), width: wp(3), marginRight: wp(4) }}
-            />
-            <Image
-              source={ImagePath.AppDrawer}
               style={{ height: wp(3), width: wp(3), marginRight: wp(2) }}
             />
+            {/* <Image
+              source={ImagePath.AppDrawer}
+              style={{ height: wp(3), width: wp(3), marginRight: wp(2) }}
+            /> */}
           </View>
         </View>
         <View
           style={{
             marginTop: wp(2),
             marginHorizontal: wp(2),
+            flex: 1,
           }}
         >
           <FlatList data={data} renderItem={renderItem} numColumns={3} />
